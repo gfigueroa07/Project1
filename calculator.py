@@ -47,22 +47,25 @@
 def calculate():
     while True:
         try:
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
-            operator = input("Enter operator (+, -, *, /): ")
+            num1 = int(input("Enter first number: "))
+            num2 = int(input("Enter second number: "))
+            user_choice = input("Enter operator (+, -, *, /) or 'q' to exit: ")
 
-            if operator == '+':
+
+            if user_choice == "q".lower():
+                break
+            elif user_choice == '+':
                 result = num1 + num2
-            elif operator == '-':
+            elif user_choice == '-':
                 result = num1 - num2
-            elif operator == '*':
+            elif user_choice == '*':
                 result = num1 * num2
-            elif operator == '/':
+            elif user_choice == '/':
                 if num2 == 0:
-                    raise ZeroDivisionError("Cannot divide by zero.")
+                    raise ZeroDivisionError("Dont divide by zero, uncultured mf xD")
                 result = num1 / num2
             else:
-                raise ValueError("Invalid operator.")
+                raise ValueError("It's a calculator... use numbers instead bruh")
 
             print("Result:", result)
             break
