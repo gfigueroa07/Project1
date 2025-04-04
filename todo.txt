@@ -1,0 +1,19 @@
+Make a function called input_to_int that takes one argument. The argument is a string with the question to ask the user:
+The function must do the following:
+- Take input from the user
+- Check if input is a valid number
+
+One of the following implementations:
+- Return the number if valid and Return _None_  if not valid (datatype that represents literally nothing)
+OR
+- Return the number if valid and ask again if not valid.
+- The user **must** have the choice of stopping this and the program returns _None_.
+
+Tips:
+- The function call can be assigned to a variable directly, just like you do with any other.
+```py
+# eg. variable1 = print("what do?")
+```
+- The function returns either a number or _None_.
+- Remember, you are making this function so you can use it anywhere that you need a number from the user, without the hassle of validating that input manually every single time with Try-Except blocks. You just call the function and trust it will do what it has to do, and return what it has to. 
+__When you call it anywhere in your code all you have to do is check what was returned and act accordingly.__
